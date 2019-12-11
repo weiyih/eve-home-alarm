@@ -14,27 +14,8 @@
 		0A857D3323A158B200ED8305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3223A158B200ED8305 /* Assets.xcassets */; };
 		0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3523A158B200ED8305 /* Preview Assets.xcassets */; };
 		0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */; };
-		0A857D4423A158B200ED8305 /* eve_home_alarm_managerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D4323A158B200ED8305 /* eve_home_alarm_managerTests.swift */; };
-		0A857D4F23A158B200ED8305 /* eve_home_alarm_managerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D4E23A158B200ED8305 /* eve_home_alarm_managerUITests.swift */; };
 		0AA2677123A15CDC0019026C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2677023A15CDC0019026C /* .gitignore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A857D4023A158B200ED8305 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A857D1E23A158B100ED8305 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A857D2523A158B100ED8305;
-			remoteInfo = "eve-home-alarm-manager";
-		};
-		0A857D4B23A158B200ED8305 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A857D1E23A158B100ED8305 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A857D2523A158B100ED8305;
-			remoteInfo = "eve-home-alarm-manager";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eve-home-alarm-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +27,8 @@
 		0A857D3523A158B200ED8305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A857D3823A158B200ED8305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A857D3A23A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A857D3F23A158B200ED8305 /* eve-home-alarm-managerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eve-home-alarm-managerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A857D4323A158B200ED8305 /* eve_home_alarm_managerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eve_home_alarm_managerTests.swift; sourceTree = "<group>"; };
 		0A857D4523A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A857D4A23A158B200ED8305 /* eve-home-alarm-managerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eve-home-alarm-managerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A857D4E23A158B200ED8305 /* eve_home_alarm_managerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eve_home_alarm_managerUITests.swift; sourceTree = "<group>"; };
 		0A857D5023A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA2677023A15CDC0019026C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -57,20 +36,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		0A857D2323A158B100ED8305 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A857D3C23A158B200ED8305 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A857D4723A158B200ED8305 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -94,8 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */,
-				0A857D3F23A158B200ED8305 /* eve-home-alarm-managerTests.xctest */,
-				0A857D4A23A158B200ED8305 /* eve-home-alarm-managerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,42 +125,6 @@
 			productReference = 0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A857D3E23A158B200ED8305 /* eve-home-alarm-managerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A857D5623A158B200ED8305 /* Build configuration list for PBXNativeTarget "eve-home-alarm-managerTests" */;
-			buildPhases = (
-				0A857D3B23A158B200ED8305 /* Sources */,
-				0A857D3C23A158B200ED8305 /* Frameworks */,
-				0A857D3D23A158B200ED8305 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A857D4123A158B200ED8305 /* PBXTargetDependency */,
-			);
-			name = "eve-home-alarm-managerTests";
-			productName = "eve-home-alarm-managerTests";
-			productReference = 0A857D3F23A158B200ED8305 /* eve-home-alarm-managerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0A857D4923A158B200ED8305 /* eve-home-alarm-managerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A857D5923A158B200ED8305 /* Build configuration list for PBXNativeTarget "eve-home-alarm-managerUITests" */;
-			buildPhases = (
-				0A857D4623A158B200ED8305 /* Sources */,
-				0A857D4723A158B200ED8305 /* Frameworks */,
-				0A857D4823A158B200ED8305 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A857D4C23A158B200ED8305 /* PBXTargetDependency */,
-			);
-			name = "eve-home-alarm-managerUITests";
-			productName = "eve-home-alarm-managerUITests";
-			productReference = 0A857D4A23A158B200ED8305 /* eve-home-alarm-managerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,14 +137,6 @@
 				TargetAttributes = {
 					0A857D2523A158B100ED8305 = {
 						CreatedOnToolsVersion = 11.2.1;
-					};
-					0A857D3E23A158B200ED8305 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0A857D2523A158B100ED8305;
-					};
-					0A857D4923A158B200ED8305 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0A857D2523A158B100ED8305;
 					};
 				};
 			};
@@ -235,8 +154,6 @@
 			projectRoot = "";
 			targets = (
 				0A857D2523A158B100ED8305 /* eve-home-alarm-manager */,
-				0A857D3E23A158B200ED8305 /* eve-home-alarm-managerTests */,
-				0A857D4923A158B200ED8305 /* eve-home-alarm-managerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,20 +167,6 @@
 				0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */,
 				0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */,
 				0A857D3323A158B200ED8305 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A857D3D23A158B200ED8305 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A857D4823A158B200ED8305 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,36 +184,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A857D3B23A158B200ED8305 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A857D4423A158B200ED8305 /* eve_home_alarm_managerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A857D4623A158B200ED8305 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A857D4F23A158B200ED8305 /* eve_home_alarm_managerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A857D4123A158B200ED8305 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A857D2523A158B100ED8305 /* eve-home-alarm-manager */;
-			targetProxy = 0A857D4023A158B200ED8305 /* PBXContainerItemProxy */;
-		};
-		0A857D4C23A158B200ED8305 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A857D2523A158B100ED8305 /* eve-home-alarm-manager */;
-			targetProxy = 0A857D4B23A158B200ED8305 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */ = {
@@ -444,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"eve-home-alarm-manager/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTYA4SEVP7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "eve-home-alarm-manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"eve-home-alarm-manager/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTYA4SEVP7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "eve-home-alarm-manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,86 +349,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0A857D5723A158B200ED8305 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "eve-home-alarm-managerTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyih.eve-home-alarm-managerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eve-home-alarm-manager.app/eve-home-alarm-manager";
-			};
-			name = Debug;
-		};
-		0A857D5823A158B200ED8305 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "eve-home-alarm-managerTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyih.eve-home-alarm-managerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eve-home-alarm-manager.app/eve-home-alarm-manager";
-			};
-			name = Release;
-		};
-		0A857D5A23A158B200ED8305 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "eve-home-alarm-managerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyih.eve-home-alarm-managerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "eve-home-alarm-manager";
-			};
-			name = Debug;
-		};
-		0A857D5B23A158B200ED8305 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "eve-home-alarm-managerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyih.eve-home-alarm-managerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "eve-home-alarm-manager";
 			};
 			name = Release;
 		};
@@ -573,24 +369,6 @@
 			buildConfigurations = (
 				0A857D5423A158B200ED8305 /* Debug */,
 				0A857D5523A158B200ED8305 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A857D5623A158B200ED8305 /* Build configuration list for PBXNativeTarget "eve-home-alarm-managerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A857D5723A158B200ED8305 /* Debug */,
-				0A857D5823A158B200ED8305 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A857D5923A158B200ED8305 /* Build configuration list for PBXNativeTarget "eve-home-alarm-managerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A857D5A23A158B200ED8305 /* Debug */,
-				0A857D5B23A158B200ED8305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
