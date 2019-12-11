@@ -15,6 +15,7 @@
 		0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3523A158B200ED8305 /* Preview Assets.xcassets */; };
 		0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */; };
 		0AA2677123A15CDC0019026C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2677023A15CDC0019026C /* .gitignore */; };
+		0AA267B323A16CA50019026C /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA267B223A16CA50019026C /* HomeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +28,9 @@
 		0A857D3523A158B200ED8305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A857D3823A158B200ED8305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A857D3A23A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A857D4323A158B200ED8305 /* eve_home_alarm_managerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eve_home_alarm_managerTests.swift; sourceTree = "<group>"; };
-		0A857D4523A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A857D4E23A158B200ED8305 /* eve_home_alarm_managerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eve_home_alarm_managerUITests.swift; sourceTree = "<group>"; };
-		0A857D5023A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA2677023A15CDC0019026C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0AA267B223A16CA50019026C /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		0AA267B423A1997A0019026C /* eve-home-alarm-manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "eve-home-alarm-manager.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA267B323A16CA50019026C /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,9 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				0A857D2823A158B100ED8305 /* eve-home-alarm-manager */,
-				0A857D4223A158B200ED8305 /* eve-home-alarm-managerTests */,
-				0A857D4D23A158B200ED8305 /* eve-home-alarm-managerUITests */,
 				0A857D2723A158B100ED8305 /* Products */,
+				0AA267B123A16CA50019026C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +65,7 @@
 		0A857D2823A158B100ED8305 /* eve-home-alarm-manager */ = {
 			isa = PBXGroup;
 			children = (
+				0AA267B423A1997A0019026C /* eve-home-alarm-manager.entitlements */,
 				0A857D2923A158B100ED8305 /* AppDelegate.swift */,
 				0A857D2B23A158B100ED8305 /* SceneDelegate.swift */,
 				0A857D3023A158B100ED8305 /* ContentView.swift */,
@@ -87,22 +87,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0A857D4223A158B200ED8305 /* eve-home-alarm-managerTests */ = {
+		0AA267B123A16CA50019026C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A857D4323A158B200ED8305 /* eve_home_alarm_managerTests.swift */,
-				0A857D4523A158B200ED8305 /* Info.plist */,
+				0AA267B223A16CA50019026C /* HomeKit.framework */,
 			);
-			path = "eve-home-alarm-managerTests";
-			sourceTree = "<group>";
-		};
-		0A857D4D23A158B200ED8305 /* eve-home-alarm-managerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A857D4E23A158B200ED8305 /* eve_home_alarm_managerUITests.swift */,
-				0A857D5023A158B200ED8305 /* Info.plist */,
-			);
-			path = "eve-home-alarm-managerUITests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "eve-home-alarm-manager/eve-home-alarm-manager.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"eve-home-alarm-manager/Preview Content\"";
 				DEVELOPMENT_TEAM = ZTYA4SEVP7;
@@ -336,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "eve-home-alarm-manager/eve-home-alarm-manager.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"eve-home-alarm-manager/Preview Content\"";
 				DEVELOPMENT_TEAM = ZTYA4SEVP7;
