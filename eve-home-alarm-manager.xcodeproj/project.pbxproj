@@ -16,6 +16,7 @@
 		0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */; };
 		0A857D4423A158B200ED8305 /* eve_home_alarm_managerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D4323A158B200ED8305 /* eve_home_alarm_managerTests.swift */; };
 		0A857D4F23A158B200ED8305 /* eve_home_alarm_managerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D4E23A158B200ED8305 /* eve_home_alarm_managerUITests.swift */; };
+		0AA2677123A15CDC0019026C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2677023A15CDC0019026C /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0A857D4A23A158B200ED8305 /* eve-home-alarm-managerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eve-home-alarm-managerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A857D4E23A158B200ED8305 /* eve_home_alarm_managerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eve_home_alarm_managerUITests.swift; sourceTree = "<group>"; };
 		0A857D5023A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA2677023A15CDC0019026C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */,
 				0A857D3A23A158B200ED8305 /* Info.plist */,
 				0A857D2D23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld */,
+				0AA2677023A15CDC0019026C /* .gitignore */,
 				0A857D3423A158B200ED8305 /* Preview Content */,
 			);
 			path = "eve-home-alarm-manager";
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA2677123A15CDC0019026C /* .gitignore in Resources */,
 				0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */,
 				0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */,
 				0A857D3323A158B200ED8305 /* Assets.xcassets in Resources */,
