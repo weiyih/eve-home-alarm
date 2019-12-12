@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6B158F23A1AB0200D3149E /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B158E23A1AB0200D3149E /* DeviceManager.swift */; };
+		0A6B159123A1AC6900D3149E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B159023A1AC6900D3149E /* GoogleService-Info.plist */; };
 		0A857D2A23A158B100ED8305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D2923A158B100ED8305 /* AppDelegate.swift */; };
 		0A857D2C23A158B100ED8305 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D2B23A158B100ED8305 /* SceneDelegate.swift */; };
 		0A857D2F23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D2D23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld */; };
@@ -16,9 +18,12 @@
 		0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */; };
 		0AA2677123A15CDC0019026C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2677023A15CDC0019026C /* .gitignore */; };
 		0AA267B323A16CA50019026C /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA267B223A16CA50019026C /* HomeKit.framework */; };
+		AF1065E5A1BD4E27A546E878 /* Pods_eve_home_alarm_manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE466DCD916DFD45FECD1E98 /* Pods_eve_home_alarm_manager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A6B158E23A1AB0200D3149E /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		0A6B159023A1AC6900D3149E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eve-home-alarm-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A857D2923A158B100ED8305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A857D2B23A158B100ED8305 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,9 @@
 		0AA2677023A15CDC0019026C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0AA267B223A16CA50019026C /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		0AA267B423A1997A0019026C /* eve-home-alarm-manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "eve-home-alarm-manager.entitlements"; sourceTree = "<group>"; };
+		3CA609E135ABB1E9E1B867CE /* Pods-eve-home-alarm-manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eve-home-alarm-manager.debug.xcconfig"; path = "Target Support Files/Pods-eve-home-alarm-manager/Pods-eve-home-alarm-manager.debug.xcconfig"; sourceTree = "<group>"; };
+		41F90485AD8A75AE2A9184AC /* Pods-eve-home-alarm-manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eve-home-alarm-manager.release.xcconfig"; path = "Target Support Files/Pods-eve-home-alarm-manager/Pods-eve-home-alarm-manager.release.xcconfig"; sourceTree = "<group>"; };
+		AE466DCD916DFD45FECD1E98 /* Pods_eve_home_alarm_manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eve_home_alarm_manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +47,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA267B323A16CA50019026C /* HomeKit.framework in Frameworks */,
+				AF1065E5A1BD4E27A546E878 /* Pods_eve_home_alarm_manager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6B158D23A1AA9900D3149E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B158E23A1AB0200D3149E /* DeviceManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0A857D1D23A158B100ED8305 = {
 			isa = PBXGroup;
 			children = (
 				0A857D2823A158B100ED8305 /* eve-home-alarm-manager */,
-				0A857D2723A158B100ED8305 /* Products */,
 				0AA267B123A16CA50019026C /* Frameworks */,
+				0A857D2723A158B100ED8305 /* Products */,
+				89F2B5B6D3CAB65AF6CCA116 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +83,17 @@
 		0A857D2823A158B100ED8305 /* eve-home-alarm-manager */ = {
 			isa = PBXGroup;
 			children = (
-				0AA267B423A1997A0019026C /* eve-home-alarm-manager.entitlements */,
+				0A6B158D23A1AA9900D3149E /* Model */,
 				0A857D2923A158B100ED8305 /* AppDelegate.swift */,
 				0A857D2B23A158B100ED8305 /* SceneDelegate.swift */,
 				0A857D3023A158B100ED8305 /* ContentView.swift */,
 				0A857D3223A158B200ED8305 /* Assets.xcassets */,
 				0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */,
-				0A857D3A23A158B200ED8305 /* Info.plist */,
 				0A857D2D23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld */,
+				0AA267B423A1997A0019026C /* eve-home-alarm-manager.entitlements */,
+				0A857D3A23A158B200ED8305 /* Info.plist */,
 				0AA2677023A15CDC0019026C /* .gitignore */,
+				0A6B159023A1AC6900D3149E /* GoogleService-Info.plist */,
 				0A857D3423A158B200ED8305 /* Preview Content */,
 			);
 			path = "eve-home-alarm-manager";
@@ -91,8 +111,19 @@
 			isa = PBXGroup;
 			children = (
 				0AA267B223A16CA50019026C /* HomeKit.framework */,
+				AE466DCD916DFD45FECD1E98 /* Pods_eve_home_alarm_manager.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89F2B5B6D3CAB65AF6CCA116 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CA609E135ABB1E9E1B867CE /* Pods-eve-home-alarm-manager.debug.xcconfig */,
+				41F90485AD8A75AE2A9184AC /* Pods-eve-home-alarm-manager.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A857D5323A158B200ED8305 /* Build configuration list for PBXNativeTarget "eve-home-alarm-manager" */;
 			buildPhases = (
+				E4F48E46B54CBB5E0F2B2830 /* [CP] Check Pods Manifest.lock */,
 				0A857D2223A158B100ED8305 /* Sources */,
 				0A857D2323A158B100ED8305 /* Frameworks */,
 				0A857D2423A158B100ED8305 /* Resources */,
+				FBC47A08F23CEAFB6322DB04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,12 +188,55 @@
 			files = (
 				0AA2677123A15CDC0019026C /* .gitignore in Resources */,
 				0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */,
+				0A6B159123A1AC6900D3149E /* GoogleService-Info.plist in Resources */,
 				0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */,
 				0A857D3323A158B200ED8305 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4F48E46B54CBB5E0F2B2830 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eve-home-alarm-manager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC47A08F23CEAFB6322DB04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eve-home-alarm-manager/Pods-eve-home-alarm-manager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eve-home-alarm-manager/Pods-eve-home-alarm-manager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eve-home-alarm-manager/Pods-eve-home-alarm-manager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A857D2223A158B100ED8305 /* Sources */ = {
@@ -170,6 +246,7 @@
 				0A857D2A23A158B100ED8305 /* AppDelegate.swift in Sources */,
 				0A857D2F23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld in Sources */,
 				0A857D3123A158B100ED8305 /* ContentView.swift in Sources */,
+				0A6B158F23A1AB0200D3149E /* DeviceManager.swift in Sources */,
 				0A857D2C23A158B100ED8305 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +381,7 @@
 		};
 		0A857D5423A158B200ED8305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA609E135ABB1E9E1B867CE /* Pods-eve-home-alarm-manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "eve-home-alarm-manager/eve-home-alarm-manager.entitlements";
@@ -325,6 +403,7 @@
 		};
 		0A857D5523A158B200ED8305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F90485AD8A75AE2A9184AC /* Pods-eve-home-alarm-manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "eve-home-alarm-manager/eve-home-alarm-manager.entitlements";
