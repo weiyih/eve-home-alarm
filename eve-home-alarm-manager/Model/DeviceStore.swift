@@ -9,14 +9,18 @@
 import UIKit
 import HomeKit
 
-class DeviceManager: NSObject {
+class DeviceStore: NSObject {
 
-    static var shared = DeviceManager()
+    static var shared = DeviceStore()
     
     let deviceManager = HMHomeManager()
     
     var homeDelegates = Set<NSObject>()
     
     var accessoryDelegates = Set<NSObject>()
+    
+}
+
+extension DeviceStore {
     
 }

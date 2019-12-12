@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A6B158F23A1AB0200D3149E /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B158E23A1AB0200D3149E /* DeviceManager.swift */; };
+		0A5D613823A1CEC7005CB345 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D613723A1CEC7005CB345 /* Main.swift */; };
+		0A5D613C23A1F58C005CB345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5D613B23A1F58C005CB345 /* Main.storyboard */; };
+		0A5D615E23A1F842005CB345 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D615D23A1F842005CB345 /* SceneDelegate.swift */; };
+		0A6B158F23A1AB0200D3149E /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B158E23A1AB0200D3149E /* DeviceStore.swift */; };
 		0A6B159123A1AC6900D3149E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B159023A1AC6900D3149E /* GoogleService-Info.plist */; };
 		0A857D2A23A158B100ED8305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D2923A158B100ED8305 /* AppDelegate.swift */; };
-		0A857D2C23A158B100ED8305 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D2B23A158B100ED8305 /* SceneDelegate.swift */; };
-		0A857D2F23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D2D23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld */; };
-		0A857D3123A158B100ED8305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A857D3023A158B100ED8305 /* ContentView.swift */; };
 		0A857D3323A158B200ED8305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3223A158B200ED8305 /* Assets.xcassets */; };
-		0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3523A158B200ED8305 /* Preview Assets.xcassets */; };
 		0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */; };
 		0AA2677123A15CDC0019026C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2677023A15CDC0019026C /* .gitignore */; };
 		0AA267B323A16CA50019026C /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA267B223A16CA50019026C /* HomeKit.framework */; };
@@ -22,15 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A6B158E23A1AB0200D3149E /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		0A5D613723A1CEC7005CB345 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		0A5D613B23A1F58C005CB345 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0A5D615D23A1F842005CB345 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A6B158E23A1AB0200D3149E /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
 		0A6B159023A1AC6900D3149E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eve-home-alarm-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A857D2623A158B100ED8305 /* Eve HomeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eve HomeAlarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A857D2923A158B100ED8305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A857D2B23A158B100ED8305 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A857D2E23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eve_home_alarm_manager.xcdatamodel; sourceTree = "<group>"; };
-		0A857D3023A158B100ED8305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A857D3223A158B200ED8305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A857D3523A158B200ED8305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A857D3823A158B200ED8305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A857D3A23A158B200ED8305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA2677023A15CDC0019026C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -54,10 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A5D613423A1CB3B005CB345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A5D613723A1CEC7005CB345 /* Main.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0A6B158D23A1AA9900D3149E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0A6B158E23A1AB0200D3149E /* DeviceManager.swift */,
+				0A6B158E23A1AB0200D3149E /* DeviceStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -66,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				0A857D2823A158B100ED8305 /* eve-home-alarm-manager */,
+				0AA2677023A15CDC0019026C /* .gitignore */,
 				0AA267B123A16CA50019026C /* Frameworks */,
 				0A857D2723A158B100ED8305 /* Products */,
 				89F2B5B6D3CAB65AF6CCA116 /* Pods */,
@@ -75,7 +82,7 @@
 		0A857D2723A158B100ED8305 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */,
+				0A857D2623A158B100ED8305 /* Eve HomeAlarm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,27 +91,17 @@
 			isa = PBXGroup;
 			children = (
 				0A6B158D23A1AA9900D3149E /* Model */,
+				0A5D613423A1CB3B005CB345 /* View */,
 				0A857D2923A158B100ED8305 /* AppDelegate.swift */,
-				0A857D2B23A158B100ED8305 /* SceneDelegate.swift */,
-				0A857D3023A158B100ED8305 /* ContentView.swift */,
+				0A5D615D23A1F842005CB345 /* SceneDelegate.swift */,
 				0A857D3223A158B200ED8305 /* Assets.xcassets */,
-				0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */,
-				0A857D2D23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld */,
 				0AA267B423A1997A0019026C /* eve-home-alarm-manager.entitlements */,
-				0A857D3A23A158B200ED8305 /* Info.plist */,
-				0AA2677023A15CDC0019026C /* .gitignore */,
 				0A6B159023A1AC6900D3149E /* GoogleService-Info.plist */,
-				0A857D3423A158B200ED8305 /* Preview Content */,
+				0A857D3A23A158B200ED8305 /* Info.plist */,
+				0A857D3723A158B200ED8305 /* LaunchScreen.storyboard */,
+				0A5D613B23A1F58C005CB345 /* Main.storyboard */,
 			);
 			path = "eve-home-alarm-manager";
-			sourceTree = "<group>";
-		};
-		0A857D3423A158B200ED8305 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				0A857D3523A158B200ED8305 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		0AA267B123A16CA50019026C /* Frameworks */ = {
@@ -122,7 +119,6 @@
 				3CA609E135ABB1E9E1B867CE /* Pods-eve-home-alarm-manager.debug.xcconfig */,
 				41F90485AD8A75AE2A9184AC /* Pods-eve-home-alarm-manager.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,7 +141,7 @@
 			);
 			name = "eve-home-alarm-manager";
 			productName = "eve-home-alarm-manager";
-			productReference = 0A857D2623A158B100ED8305 /* eve-home-alarm-manager.app */;
+			productReference = 0A857D2623A158B100ED8305 /* Eve HomeAlarm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,9 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA2677123A15CDC0019026C /* .gitignore in Resources */,
+				0A5D613C23A1F58C005CB345 /* Main.storyboard in Resources */,
 				0A857D3923A158B200ED8305 /* LaunchScreen.storyboard in Resources */,
 				0A6B159123A1AC6900D3149E /* GoogleService-Info.plist in Resources */,
-				0A857D3623A158B200ED8305 /* Preview Assets.xcassets in Resources */,
 				0A857D3323A158B200ED8305 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,11 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5D613823A1CEC7005CB345 /* Main.swift in Sources */,
 				0A857D2A23A158B100ED8305 /* AppDelegate.swift in Sources */,
-				0A857D2F23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld in Sources */,
-				0A857D3123A158B100ED8305 /* ContentView.swift in Sources */,
-				0A6B158F23A1AB0200D3149E /* DeviceManager.swift in Sources */,
-				0A857D2C23A158B100ED8305 /* SceneDelegate.swift in Sources */,
+				0A6B158F23A1AB0200D3149E /* DeviceStore.swift in Sources */,
+				0A5D615E23A1F842005CB345 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyih.eve-home-alarm-manager";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Eve HomeAlarm";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -417,7 +412,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyih.eve-home-alarm-manager";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Eve HomeAlarm";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,19 +440,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0A857D2D23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0A857D2E23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodel */,
-			);
-			currentVersion = 0A857D2E23A158B100ED8305 /* eve_home_alarm_manager.xcdatamodel */;
-			path = eve_home_alarm_manager.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0A857D1E23A158B100ED8305 /* Project object */;
 }
