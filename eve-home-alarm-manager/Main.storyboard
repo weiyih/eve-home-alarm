@@ -30,14 +30,54 @@
                     <view key="view" contentMode="scaleToFill" id="I0g-0n-Lre">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devices" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLN-ac-JUX">
+                                <rect key="frame" x="20" y="81" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="eoK-Df-KE4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g1l-V0-ZpQ">
+                                <rect key="frame" x="20" y="145" width="374" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="156" id="s42-ld-2ln">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s42-ld-2ln" id="Rak-FG-j3e">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HLN-ac-JUX" firstAttribute="trailing" secondItem="I0g-0n-Lre" secondAttribute="trailingMargin" id="Mkv-az-PzV"/>
+                            <constraint firstItem="g1l-V0-ZpQ" firstAttribute="top" secondItem="HLN-ac-JUX" secondAttribute="bottom" constant="8" id="NQm-MY-UvZ"/>
+                            <constraint firstItem="g1l-V0-ZpQ" firstAttribute="trailing" secondItem="HLN-ac-JUX" secondAttribute="trailing" id="VzG-fn-EXk"/>
+                            <constraint firstItem="mNB-7m-HTF" firstAttribute="bottom" secondItem="g1l-V0-ZpQ" secondAttribute="bottom" constant="12" id="bzq-Wq-Jep"/>
+                            <constraint firstItem="g1l-V0-ZpQ" firstAttribute="leading" secondItem="HLN-ac-JUX" secondAttribute="leading" id="hZR-C7-luX"/>
+                            <constraint firstItem="HLN-ac-JUX" firstAttribute="top" secondItem="I0g-0n-Lre" secondAttribute="topMargin" constant="-7" id="ikH-JK-yTb"/>
+                            <constraint firstItem="HLN-ac-JUX" firstAttribute="leading" secondItem="I0g-0n-Lre" secondAttribute="leadingMargin" id="t9d-6R-zga"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mNB-7m-HTF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Alarm" id="dFH-hc-Dnn"/>
+                    <navigationItem key="navigationItem" title="Home Alarm" id="dFH-hc-Dnn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Wq-uV-IJb">
+                            <connections>
+                                <action selector="addDevices:" destination="5RI-ty-rrI" id="oRi-8Z-acb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3l-zM-JgH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="0.0"/>
+            <point key="canvasLocation" x="-255.07246376811597" y="0.0"/>
         </scene>
     </scenes>
 </document>

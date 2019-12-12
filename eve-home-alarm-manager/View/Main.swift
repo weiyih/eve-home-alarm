@@ -11,16 +11,29 @@ import HomeKit
 
 class Main: UIViewController {
     
+    // Filtered list of devices
     var devicesList = [HMService]()
-    
-//    var manager: HMHome? {
-//        didSet {
-//            manager?.delegate = DeviceManager.shared
-//            reloadData()
-//        }
-//    }
+
+       
+    var home: HMHome? {
+        didSet {
+            home?.delegate = DeviceStore.shared
+            reloadData()
+        }
+    }
     
     func reloadData() {
+        
+//        deviceLists = []
+        
+        guard let home = home else { return }
+        
+        for accessory in home.accessories {
+            accessory.delegate = DeviceStore.shared
+            print(accessory)
+            
+//            for service in accessory.services.filter({ $0.isUserInteractive })
+        }
         
     }
 
@@ -28,10 +41,20 @@ class Main: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        DeviceStore.shared.deviceManager.delegate = self
+        DeviceStore.shared.deviceManager.delegate = self
+        DeviceStore.shared.addHomeDelegate(self)
+        DeviceStore.shared.addAccessoryDelegate(self)
     }
     
-
+    /// Deregisters this view controller as various kinds of delegate.
+    deinit {
+        DeviceStore.shared.deviceManager.delegate = nil
+        DeviceStore.shared.removeHomeDelegate(self)
+        DeviceStore.shared.removeAccessoryDelegate(self)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -41,5 +64,19 @@ class Main: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func addDevices(_ sender: Any) {
+        // Consistent user experience for HomeKit apps
+        // replaces HMAccessoryBrowser
+        home?.addAndSetupAccessories(completionHandler: { error in
+            if let error = error {
+                print(error)
+            } else {
+                // Make no assumption about changes; just reload everything.
+                self.reloadData()
+            }
+        })
+    }
+
 
 }
