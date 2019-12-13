@@ -8,8 +8,12 @@
 
 import UIKit
 import HomeKit
+import FirebaseDatabase
+
 
 class Main: UITableViewController {
+    
+    var ref : DatabaseReference! = Database.database().reference()
     
     //Register list of devices
     var deviceList = [HMService]()
@@ -107,6 +111,8 @@ class Main: UITableViewController {
         return cell
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.ref.child("alarms").child("alrmidhere").setValue(["Description": "Front Door 2", "ID": "alarm", "approve": true])
+    }
     
 }
