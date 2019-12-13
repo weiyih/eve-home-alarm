@@ -23,7 +23,7 @@ extension Main: HMHomeDelegate {
         // Make sure the new accessory generates callbacks to the home store.
         accessory.delegate = DeviceStore.shared
 
-        reloadData()
+        loadAccessories()
     }
     
     func home(_ home: HMHome, didUpdate room: HMRoom, for accessory: HMAccessory) {
@@ -39,7 +39,7 @@ extension Main: HMHomeDelegate {
     func home(_ home: HMHome, didRemove accessory: HMAccessory) {
         guard home == self.home else { return }
         navigationController?.popToRootViewController(animated: true)
-        reloadData()
+        loadAccessories()
     }
     
     func home(_ home: HMHome, didUpdateNameFor room: HMRoom) {
