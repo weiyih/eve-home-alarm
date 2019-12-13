@@ -51,7 +51,7 @@ class DeviceCell: UITableViewCell {
             stateLabel.text = "Update error!"
         } else {
 //            stateLabel.text = service?
-            stateLabel.text = service?.accessory.
+//            stateLabel.text = service?.accessory.
             stateLabel.text = "TODO"
         }
     }

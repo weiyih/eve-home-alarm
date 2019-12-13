@@ -20,13 +20,26 @@ extension HMService {
     var deviceServiceType: AlarmServiceType {
         switch serviceType {
         case HMServiceTypeMotionSensor: return .motion
-//        case HMServiceTypeWindow, HMServiceTypeDoor: return .door
+        //        case HMServiceTypeWindow, HMServiceTypeDoor: return .door
         case HMServiceTypeContactSensor: return .contact
         default: return .unknown
         }
     }
     
-
+    /// The primary characteristic type to be controlled, given the service type.
+    var primaryControlCharacteristicType: String? {
+        switch deviceServiceType {
+        case .contact: return HMCharacteristicTypeContactState
+        case .motion: return HMCharacteristicTypeMotionDetected
+        case .unknown: return nil
+        }
+    }
+    
+    // Main display characteristic of the service
+    var primaryDisplayCharacteristic: HMCharacteristic? {
+        return characteristics.first { $0.characteristicType == primaryControlCharacteristicType }
+    }
+    
     //Returns string of the current state of service
     private var state: String {
         switch deviceServiceType {
@@ -43,21 +56,24 @@ extension HMService {
                 case .none: return ("Open")
                 @unknown default: return ("Unknown")
                 }
+                
+            } else {
+                return ("Unknown")
             }
         case .motion:
             if let value = primaryDisplayCharacteristic?.value as? Int,
-                let motionState = HMCharacteristicValueContactState(rawValue: value) {
+                let motionState = HMCharacteristicValueOccupancyStatus(rawValue: value) {
                 switch motionState {
-                case .detected: return ("Motion Detected")
-                case .none: return ("No Motion Detected")
+                case .occupied: return ("Motion Detected")
+                case .notOccupied: return ("No Motion Detected")
                 @unknown default: return ("Unknown")
                 }
+            } else {
+                return ("Unknown")
             }
-            return ("Unknown")
-            
         case .unknown:
             return ("Unknown")
         }
     }
-
+    
 }
